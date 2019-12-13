@@ -1,0 +1,18 @@
+{
+    "name": "@tolkam/react-lazy-image",
+    "version": "1.0.0",
+    "description": "Async and lazy loading image",
+    "main": "src/index.tsx",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "react": "^16.5",
+        "@tolkam/lib-utils": "file:D:/dev-packages/js/tolkam/lib-utils",
+        "@tolkam/lib-utils-ui": "file:D:/dev-packages/js/tolkam/lib-utils-ui",
+        "@tolkam/react-in-view": "file:D:/dev-packages/js/tolkam/react-in-view"
+    },
+    "devDependencies": {
+        "tslib": "^1.9.3",
+        "@types/react": "^16.4"
+    }
+}
