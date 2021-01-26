@@ -75,13 +75,14 @@ export default class Image extends PureComponent<IProps, IState> {
                 src: status === STATUS_BUSY ? (!props.noKeep ? prev : '') : next,
                 className: classNames(className, statusClassName),
             },
-            ['lazy', 'lazyParent', 'lazyOffset', 'keepPrevious', 'withClasses', 'classPrefix', 'onChanges']
+            ['lazy', 'lazyParent', 'noParentAutodetect', 'lazyOffset', 'keepPrevious', 'withClasses', 'classPrefix', 'onChanges']
         );
 
         const image = <img {...imgAttrs} />;
 
         return !props.lazy ? image : <InView
             parent={props.lazyParent}
+            parentAutodetect={!props.noParentAutodetect}
             offset={props.lazyOffset}
             onChanges={that.onLazyChanges}
             noClasses>{image}</InView>;
@@ -174,6 +175,9 @@ interface IProps extends React.HTMLProps<Image> {
 
     // parent to track visibility from
     lazyParent?: HTMLElement;
+
+    // disable autodetect of closest scrolling parent
+    noParentAutodetect?: boolean;
 
     // offset before image element becomes visible
     lazyOffset?: IOffset;
