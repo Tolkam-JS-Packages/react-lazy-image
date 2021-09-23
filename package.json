@@ -6,7 +6,7 @@
     "license": "UNLICENSED",
     "private": true,
     "dependencies": {
-        "react": "^16.5",
+        "react": "^16.14",
         "@tolkam/lib-utils": "file:D:/dev-packages/js/tolkam/lib-utils",
         "@tolkam/lib-utils-ui": "file:D:/dev-packages/js/tolkam/lib-utils-ui",
         "@tolkam/react-in-view": "file:D:/dev-packages/js/tolkam/react-in-view"
