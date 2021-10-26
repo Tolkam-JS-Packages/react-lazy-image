@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { PureComponent } from 'react';
+import { PureComponent, HTMLProps } from 'react';
 import { omit } from '@tolkam/lib-utils';
 import { classNames } from '@tolkam/lib-utils-ui';
 import InView, { IOffset, IVisibility, TStopFn } from '@tolkam/react-in-view';
@@ -167,7 +166,7 @@ interface IState {
     prev: string;
 }
 
-interface IProps extends React.HTMLProps<Image> {
+interface IProps extends HTMLProps<Image> {
     src: string;
 
     // lazy load
