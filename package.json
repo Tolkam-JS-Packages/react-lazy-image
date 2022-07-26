@@ -5,15 +5,15 @@
     "types": "src/index.tsx",
     "license": "UNLICENSED",
     "dependencies": {
-        "@tolkam/lib-utils": "^0.2.0",
-        "@tolkam/lib-utils-ui": "^0.1.0",
-        "@tolkam/react-in-view": "^1.0.0"
+        "@tolkam/lib-utils": "^0.2.1",
+        "@tolkam/lib-utils-ui": "^0.2.0",
+        "@tolkam/react-in-view": "^2.0.0"
     },
     "peerDependencies": {
-        "react": "^16.14"
+        "react": "^18"
     },
     "devDependencies": {
-        "tslib": "^1.9.3",
-        "@types/react": "^16.14"
+        "tslib": "^2.4.0",
+        "@types/react": "^18"
     }
 }

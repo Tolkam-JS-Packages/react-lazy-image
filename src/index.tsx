@@ -3,8 +3,6 @@ import { omit } from '@tolkam/lib-utils';
 import { classNames } from '@tolkam/lib-utils-ui';
 import InView, { IOffset, IVisibility, TStopFn } from '@tolkam/react-in-view';
 
-export { ISubject, IContext } from '@tolkam/react-in-view';
-
 const STATUS_MOUNT = 'mount';
 const STATUS_BUSY = 'busy';
 const STATUS_LOAD = 'load';
@@ -195,3 +193,4 @@ interface IProps extends HTMLProps<Image> {
 }
 
 export { IProps, IOffset };
+export { ISubject, IContext } from '@tolkam/react-in-view';
