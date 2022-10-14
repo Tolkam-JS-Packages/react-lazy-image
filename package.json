@@ -1,6 +1,7 @@
 {
     "name": "@tolkam/react-lazy-image",
     "description": "Lazy-loadable image",
+    "version": "0.0.0",
     "browser": "src/index.tsx",
     "types": "src/index.tsx",
     "license": "UNLICENSED",
